@@ -1,29 +1,11 @@
-# README #
+# Clock application  using React, Redux, Javascript ,css , html #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+*  Clock Appliction which uses technique to break down work into intervals, 25 minutes in length,separated by short breaks
+*  Technology: Html, CSS, Javascript, Redux ,react
+* Version:1:0
 
-### What is this repository for? ###
+# Files :
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Index.html for html body;
+* style.scss  for styling of pages;
+* logicvisual.js for clock logic to perform task;

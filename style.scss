@@ -1,0 +1,154 @@
+@font-face {font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/055d8bd397b68d5d121796f56b904640.eot");
+  src: url("//db.onlinewebfonts.com/t/055d8bd397b68d5d121796f56b904640.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/055d8bd397b68d5d121796f56b904640.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/055d8bd397b68d5d121796f56b904640.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/055d8bd397b68d5d121796f56b904640.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/055d8bd397b68d5d121796f56b904640.svg#Digital") format("svg");
+}
+
+$color1: #ff8533;
+$color2: #ff944d;
+$color3: #ff8533;
+$color4: #fff;
+$color5: #fff;
+
+* {
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+button {
+  font-size: 20px;
+  color: $color5;
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  text-shadow: 0 0 5px $color2, 0 0 10px $color2, 0 0 15px $color2;
+}
+
+button:active {
+  color: $color2;
+  text-shadow: 0 0 5px $color5, 0 0 10px $color5, 0 0 15px $color5;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: $color1;
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    color: $color5;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+
+    h1 {
+      margin-top: 25px;
+      font-size: 57px;
+    }
+
+    #time-set {
+      display: flex;
+      justify-content: center;
+
+      #time-session, #time-break {
+        display: flex;
+        align-items: center;
+        margin: 10px 20px;
+        font-size: 25px;
+      }
+
+      p {
+        margin-right: 10px;
+      }
+      
+      h3 {
+        font-size: 20px;
+        padding: 5px;
+        font-weight: 400;
+      }
+      
+      #session-length, #break-length {
+        background-color: $color2;
+        border-radius: 3px;
+      }
+    }
+
+    #display {
+      background-color: $color3;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 25px;
+      border-radius: 5px;
+      font-size: 25px;
+
+      #time-left {
+        font-family: "Digital";
+        font-size: 150px;
+      }
+    }
+
+    #footer {
+      color: $color3;
+      margin-top: 15px;
+
+      a {
+        color: $color2;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-shadow: 0 0 5px $color3, 0 0 10px $color5;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  #app{
+    #container{
+      h1 {
+        margin-top: 15px;
+        font-size: 45px;
+      }
+      
+      #time-set {
+        display: flex;
+        justify-content: center;
+
+        #time-session, #time-break {
+          margin: 5px 10px;
+          font-size: 15px;
+        }
+
+        h3 {
+          font-size: 15px;
+          padding: 10px;
+        }
+      }
+
+      #display {
+        width: 300px;
+        padding: 20px;
+
+        #time-left {
+          font-size: 120px;
+        }
+      }
+    }
+  }
+}
